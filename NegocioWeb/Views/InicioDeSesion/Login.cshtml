@@ -1,0 +1,35 @@
+﻿
+@{
+    ViewData["Title"] = "Iniciar Sesión";
+    Layout = "_LayoutLogin";
+}
+
+
+<html lang="es-mx">
+    <head>
+        <meta charset="utf-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="~/css/EstilosLogin.css"/>
+    </head>
+    <body class="fondo">
+        <div class="contenidologin">
+            <form action="@Url.Content("~/InicioDeSesion/Login")" method="post">
+            <div class="contenido">
+                <input id="Usuario" type="text" class="form-control" name="Username" placeholder="Usuario"/>
+                <br />
+                <input id="Contrasena" type="password" class="form-control" name="Contra" placeholder="Contraseña"/>
+                <br />
+                <button id="Boton" class="botonmaster" onclick="loginjava()">Iniciar Sesión</button>
+             
+            </div>
+            </form>
+        </div>
+    @section scripts{
+        <script src="~/js/VentanaMensaje.js">
+        </script>
+    }
+    </body>
+</html>
+

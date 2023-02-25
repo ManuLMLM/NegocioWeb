@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "/Svp+noiAJ9sD+SmM1L4rUjEoDAlRutAsW/478BRKGc=",
+  "Hash": "+QZgRiBEvG2A8lmvRU3dTa3SK+z7KlH33msvddrlTV4=",
   "Source": "NegocioWeb",
   "BasePath": "_content/NegocioWeb",
   "Mode": "Default",
@@ -51,6 +51,23 @@
       "OriginalItemSpec": "C:\\Users\\luis_\\OneDrive\\Documentos\\C#\\NegocioWeb\\NegocioWeb\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\NegocioWeb.bundle.scp.css"
     },
     {
+      "Identity": "C:\\Users\\luis_\\OneDrive\\Documentos\\C#\\NegocioWeb\\NegocioWeb\\wwwroot\\css\\EstilosLogin.css",
+      "SourceId": "NegocioWeb",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\luis_\\OneDrive\\Documentos\\C#\\NegocioWeb\\NegocioWeb\\wwwroot\\",
+      "BasePath": "_content/NegocioWeb",
+      "RelativePath": "css/EstilosLogin.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\EstilosLogin.css"
+    },
+    {
       "Identity": "C:\\Users\\luis_\\OneDrive\\Documentos\\C#\\NegocioWeb\\NegocioWeb\\wwwroot\\css\\site.css",
       "SourceId": "NegocioWeb",
       "SourceType": "Discovered",
@@ -85,6 +102,23 @@
       "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
+      "Identity": "C:\\Users\\luis_\\OneDrive\\Documentos\\C#\\NegocioWeb\\NegocioWeb\\wwwroot\\imagenes\\FondoTienda.jpg",
+      "SourceId": "NegocioWeb",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\luis_\\OneDrive\\Documentos\\C#\\NegocioWeb\\NegocioWeb\\wwwroot\\",
+      "BasePath": "_content/NegocioWeb",
+      "RelativePath": "imagenes/FondoTienda.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\imagenes\\FondoTienda.jpg"
+    },
+    {
       "Identity": "C:\\Users\\luis_\\OneDrive\\Documentos\\C#\\NegocioWeb\\NegocioWeb\\wwwroot\\js\\site.js",
       "SourceId": "NegocioWeb",
       "SourceType": "Discovered",
@@ -100,6 +134,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\site.js"
+    },
+    {
+      "Identity": "C:\\Users\\luis_\\OneDrive\\Documentos\\C#\\NegocioWeb\\NegocioWeb\\wwwroot\\js\\VentanaMensaje.js",
+      "SourceId": "NegocioWeb",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\luis_\\OneDrive\\Documentos\\C#\\NegocioWeb\\NegocioWeb\\wwwroot\\",
+      "BasePath": "_content/NegocioWeb",
+      "RelativePath": "js/VentanaMensaje.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\VentanaMensaje.js"
     },
     {
       "Identity": "C:\\Users\\luis_\\OneDrive\\Documentos\\C#\\NegocioWeb\\NegocioWeb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",

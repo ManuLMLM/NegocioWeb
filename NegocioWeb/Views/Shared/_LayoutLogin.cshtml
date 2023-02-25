@@ -1,0 +1,26 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewData["Title"] - Login</title>
+    <link rel="stylesheet" href="~/css/EstilosLogin.css"/>
+</head>
+<body>
+
+    <div>
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+
+    <footer class="border-top footer text-muted">
+        <div class="container">
+            &copy; 2023 - LMLM -
+        </div>
+    </footer>
+    
+    @await RenderSectionAsync("scripts", required: false)
+</body>
+</html>

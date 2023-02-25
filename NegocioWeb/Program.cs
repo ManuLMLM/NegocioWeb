@@ -1,14 +1,18 @@
 using Microsoft.EntityFrameworkCore;
+using Microsoft.AspNetCore.Session;
 using NegocioWeb.BaseDeDatos;
+
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+
 builder.Services.AddDbContext<NegocioContext>(opciones =>
 {
-    opciones.UseSqlServer(builder.Configuration.GetConnectionString("BaseContexto"));
+    opciones.UseSqlServer(builder.Configuration.GetConnectionString("NegocioContext"));
 });
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -28,6 +32,6 @@ app.UseAuthorization();
 
 app.MapControllerRoute(
     name: "default",
-    pattern: "{controller=Home}/{action=Index}/{id?}");
+    pattern: "{controller=InicioDeSesion}/{action=Login}/{id?}");
 
 app.Run();
