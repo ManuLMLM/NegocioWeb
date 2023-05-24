@@ -8,9 +8,9 @@ function loginjava() {
 
     if (user == "" && pass == "") {
         alert("Por favor introduzca el usuario y contraseña")
-    } else if (user != "" && pass=="") {
+    } else if (user != "" && pass == "") {
         alert("Por favor introduzca la contraseña")
-    } else if (user =="" && pass!="") {
+    } else if (user == "" && pass != "") {
         alert("Por favor introduzca el usuario")
     }
     

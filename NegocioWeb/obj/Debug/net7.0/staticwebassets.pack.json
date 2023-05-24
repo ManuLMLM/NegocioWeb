@@ -9,12 +9,20 @@
       "PackagePath": "staticwebassets\\css\\EstilosLogin.css"
     },
     {
+      "Id": "C:\\Users\\luis_\\OneDrive\\Documentos\\C#\\NegocioWeb\\NegocioWeb\\wwwroot\\css\\EstilosVentanaAdmin.css",
+      "PackagePath": "staticwebassets\\css\\EstilosVentanaAdmin.css"
+    },
+    {
       "Id": "C:\\Users\\luis_\\OneDrive\\Documentos\\C#\\NegocioWeb\\NegocioWeb\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
     {
       "Id": "C:\\Users\\luis_\\OneDrive\\Documentos\\C#\\NegocioWeb\\NegocioWeb\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\luis_\\OneDrive\\Documentos\\C#\\NegocioWeb\\NegocioWeb\\wwwroot\\imagenes\\Administrador.jpg",
+      "PackagePath": "staticwebassets\\imagenes\\Administrador.jpg"
     },
     {
       "Id": "C:\\Users\\luis_\\OneDrive\\Documentos\\C#\\NegocioWeb\\NegocioWeb\\wwwroot\\imagenes\\FondoTienda.jpg",

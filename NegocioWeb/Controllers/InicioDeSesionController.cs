@@ -29,14 +29,19 @@ namespace NegocioWeb.Controllers
                                   && d.Contraseña == Contra select d).FirstOrDefault();
 
                     if (User == null) {
-                return View();
+                return Login();
 
             }
-            else if (User.IdRol==1)
+            else if (User.IdRol==3)
             {
                 return RedirectToAction("Privacy", "Home");
             }
-                    else { return RedirectToAction("Index", "Home"); }
+            else if (User.IdRol==1)
+            {
+                return RedirectToAction("IndexAdmin", "VentanaInicio");
+            }
+                    else { return Login(); }
         }
+        
     }
 }

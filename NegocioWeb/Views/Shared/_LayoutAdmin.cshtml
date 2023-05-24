@@ -1,0 +1,45 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewData["Title"] - Login</title>
+    <link rel="stylesheet" href="~/css/EstilosLogin.css" />
+    <link rel="stylesheet" href="~/css/EstilosVentanaAdmin.css" />
+</head>
+<body>
+    <header>
+        <nav>
+            <input type="checkbox" id="barra" />
+        <div class="navegador">
+            ADMINISTRADOR
+            </div>
+            <ul class="lista">
+                <li><a href="/VentanaInicio/IndexAdmin">Inicio</a></li>
+                <li><a href="#">Bitácora</a></li>
+                <li><a href="#">Configuración</a></li>
+                <li><a href="/InicioDeSesion/Login">Cerrar Sesión</a></li>
+            </ul>
+        <label for="barra" class="iconobarra">
+            <div class="linea"></div>
+            <div class="linea"></div>
+            <div class="linea"></div>
+        </label>
+        </nav>
+    </header>
+    <div>
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+
+    <footer class="border-top footer text-muted">
+        <div class="container">
+            &copy; 2023 - LMLM -
+        </div>
+    </footer>
+
+    @await RenderSectionAsync("scripts", required: false)
+</body>
+</html>

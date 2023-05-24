@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "+QZgRiBEvG2A8lmvRU3dTa3SK+z7KlH33msvddrlTV4=",
+  "Hash": "sp7/jD6r32AdPsJZgIRExr/X0s9TirldFeyAOilOwFA=",
   "Source": "NegocioWeb",
   "BasePath": "_content/NegocioWeb",
   "Mode": "Default",
@@ -68,6 +68,23 @@
       "OriginalItemSpec": "wwwroot\\css\\EstilosLogin.css"
     },
     {
+      "Identity": "C:\\Users\\luis_\\OneDrive\\Documentos\\C#\\NegocioWeb\\NegocioWeb\\wwwroot\\css\\EstilosVentanaAdmin.css",
+      "SourceId": "NegocioWeb",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\luis_\\OneDrive\\Documentos\\C#\\NegocioWeb\\NegocioWeb\\wwwroot\\",
+      "BasePath": "_content/NegocioWeb",
+      "RelativePath": "css/EstilosVentanaAdmin.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\EstilosVentanaAdmin.css"
+    },
+    {
       "Identity": "C:\\Users\\luis_\\OneDrive\\Documentos\\C#\\NegocioWeb\\NegocioWeb\\wwwroot\\css\\site.css",
       "SourceId": "NegocioWeb",
       "SourceType": "Discovered",
@@ -100,6 +117,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "C:\\Users\\luis_\\OneDrive\\Documentos\\C#\\NegocioWeb\\NegocioWeb\\wwwroot\\imagenes\\Administrador.jpg",
+      "SourceId": "NegocioWeb",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\luis_\\OneDrive\\Documentos\\C#\\NegocioWeb\\NegocioWeb\\wwwroot\\",
+      "BasePath": "_content/NegocioWeb",
+      "RelativePath": "imagenes/Administrador.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\imagenes\\Administrador.jpg"
     },
     {
       "Identity": "C:\\Users\\luis_\\OneDrive\\Documentos\\C#\\NegocioWeb\\NegocioWeb\\wwwroot\\imagenes\\FondoTienda.jpg",
