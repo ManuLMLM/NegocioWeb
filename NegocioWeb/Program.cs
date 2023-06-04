@@ -1,6 +1,5 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Session;
-using NegocioWeb.BaseDeDatos;
 
 
 var builder = WebApplication.CreateBuilder(args);
@@ -8,7 +7,7 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 
-builder.Services.AddDbContext<NegocioContext>(opciones =>
+builder.Services.AddDbContext<BaseDeDatos.Datos.NegocioWebContext>(opciones =>
 {
     opciones.UseSqlServer(builder.Configuration.GetConnectionString("NegocioContext"));
 });

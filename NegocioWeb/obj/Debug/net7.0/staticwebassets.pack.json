@@ -5,6 +5,10 @@
       "PackagePath": "staticwebassets\\NegocioWeb.bundle.scp.css"
     },
     {
+      "Id": "C:\\Users\\luis_\\OneDrive\\Documentos\\C#\\NegocioWeb\\NegocioWeb\\wwwroot\\css\\EstilosLayoutVentanaAdmin.css",
+      "PackagePath": "staticwebassets\\css\\EstilosLayoutVentanaAdmin.css"
+    },
+    {
       "Id": "C:\\Users\\luis_\\OneDrive\\Documentos\\C#\\NegocioWeb\\NegocioWeb\\wwwroot\\css\\EstilosLogin.css",
       "PackagePath": "staticwebassets\\css\\EstilosLogin.css"
     },
@@ -27,6 +31,10 @@
     {
       "Id": "C:\\Users\\luis_\\OneDrive\\Documentos\\C#\\NegocioWeb\\NegocioWeb\\wwwroot\\imagenes\\FondoTienda.jpg",
       "PackagePath": "staticwebassets\\imagenes\\FondoTienda.jpg"
+    },
+    {
+      "Id": "C:\\Users\\luis_\\OneDrive\\Documentos\\C#\\NegocioWeb\\NegocioWeb\\wwwroot\\js\\Admin.js",
+      "PackagePath": "staticwebassets\\js\\Admin.js"
     },
     {
       "Id": "C:\\Users\\luis_\\OneDrive\\Documentos\\C#\\NegocioWeb\\NegocioWeb\\wwwroot\\js\\VentanaMensaje.js",

@@ -16,7 +16,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="BaseDeDatos\" />
+    <ProjectReference Include="..\BaseDeDatos\BaseDeDatos.csproj" />
+    <ProjectReference Include="..\Moldes\Moldes.csproj" />
   </ItemGroup>
 
 </Project>

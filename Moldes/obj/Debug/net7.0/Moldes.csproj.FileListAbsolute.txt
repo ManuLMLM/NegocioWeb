@@ -1,0 +1,12 @@
+C:\Users\luis_\OneDrive\Documentos\C#\NegocioWeb\Moldes\bin\Debug\net7.0\Moldes.deps.json
+C:\Users\luis_\OneDrive\Documentos\C#\NegocioWeb\Moldes\bin\Debug\net7.0\Moldes.dll
+C:\Users\luis_\OneDrive\Documentos\C#\NegocioWeb\Moldes\bin\Debug\net7.0\Moldes.pdb
+C:\Users\luis_\OneDrive\Documentos\C#\NegocioWeb\Moldes\obj\Debug\net7.0\Moldes.csproj.AssemblyReference.cache
+C:\Users\luis_\OneDrive\Documentos\C#\NegocioWeb\Moldes\obj\Debug\net7.0\Moldes.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\luis_\OneDrive\Documentos\C#\NegocioWeb\Moldes\obj\Debug\net7.0\Moldes.AssemblyInfoInputs.cache
+C:\Users\luis_\OneDrive\Documentos\C#\NegocioWeb\Moldes\obj\Debug\net7.0\Moldes.AssemblyInfo.cs
+C:\Users\luis_\OneDrive\Documentos\C#\NegocioWeb\Moldes\obj\Debug\net7.0\Moldes.csproj.CoreCompileInputs.cache
+C:\Users\luis_\OneDrive\Documentos\C#\NegocioWeb\Moldes\obj\Debug\net7.0\Moldes.dll
+C:\Users\luis_\OneDrive\Documentos\C#\NegocioWeb\Moldes\obj\Debug\net7.0\refint\Moldes.dll
+C:\Users\luis_\OneDrive\Documentos\C#\NegocioWeb\Moldes\obj\Debug\net7.0\Moldes.pdb
+C:\Users\luis_\OneDrive\Documentos\C#\NegocioWeb\Moldes\obj\Debug\net7.0\ref\Moldes.dll

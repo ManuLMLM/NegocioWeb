@@ -1,7 +1,8 @@
 ﻿
 @{
-    ViewData["Title"] = "Usuario";
+    ViewData["Title"] = "Inicio";
     Layout = "_LayoutAdmin";
+    
 }
 
 <!DOCTYPE html>
@@ -11,15 +12,28 @@
     <meta charset="utf-8"/>
         <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-        <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
         <link rel="stylesheet" href="~/css/EstilosVentanaAdmin.css"/>
 </head>
 <body class="fondo">
-    <h1>puto</h1>
+    <h1>Usuarios</h1>
+    <div>
+        <table class="tablausuario">
+            <thead class="tablacabeza">
+                <tr>
+                    <th>Usuario</th>
+                    <th>Correo</th>
+                    <th>Rol</th>
+                </tr>
+            </thead>
+            <tbody id="tabla1">
+                <tr class="contenido">
+                </tr>
+            </tbody>
+        </table>
+    </div>
 
     @section scripts{
-        <script src="~/js/VentanaMensaje.js">
-        </script>
+        <script src="~/js/Admin.js"></script>
     }
 </body>
 </html>

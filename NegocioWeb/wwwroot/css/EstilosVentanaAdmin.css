@@ -7,112 +7,31 @@ html, body {
     margin: 0;
     padding: 0;
 }
-.fondo{
-    background-image:url(../imagenes/Administrador.jpg);
-    background-position:center;
-    background-size:100%;
-}
 
-nav{
-    position:absolute;
-    z-index:10;
-    left:0;
-    right:0;
-    top:0;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    padding: 0 5%;
-    height:75px;
-    background-color:darkcyan;
+.fondo {
+    background-image: url(../imagenes/Administrador.jpg);
+    background-position: center;
+    background-size: 100%;
 }
-    nav .navegador {
-        float: left;
-        width: 30%;
-        height: 100%;
-        display: flex;
-        align-items: center;
-        font-size: 24px;
-        color: white;
-        font-weight: bold;
-        text-transform: uppercase; /*Mayúsculas*/
-    }
-nav .lista{
-    float:right;
-    padding:0;
-    margin:0;
-    width:70%;
-    height:100%;
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
+.tablausuario {
+    border-collapse: collapse;
+    background-color: #ffffff;
+    width: 40%;
+    height: 100px;
 }
-nav .lista li{
-    list-style:none;
-
+.tablacabeza {
+    background-color: #00ffff;
+    border-bottom:solid 5px #808080;
 }
-nav .lista a{
-    display:block;
-    text-transform:uppercase;
-    padding:6px;
-    font-size:16px;
-    font-weight:bold;
+th, td {
+    border: #000000 2px solid;
+    padding:10px;
+}
+tr:nth-child(even) {
+    background: #808080;
+}
+.contenido:hover{
+    background:#4cff00;
     color:white;
-    text-decoration:none;
-    border-radius:32px;
-}
-nav .lista a:hover {
-    border: 2px solid #525cd3;
-    padding: 4px;
-    box-shadow: 0 6px 8px 0 rgba(0,0,0,0.24), 0 8px 25px 0 rgba(0,0,0,0.19);
-}
-#barra{
-    position:absolute;
-    top:-100px;
-}
-nav .iconobarra{
-    display:none;
-    position:absolute;
-    right:5%;
-    top:50%;
-    transform:translateY(-50%);
-}
-nav .iconobarra .linea{
-    width:30px;
-    height:5px;
-    background-color:white;
-    margin:5px;
-    border-radius:4px;
-    transition:all .5s ease-in-out;
-}
-@media(max-width:768px){/*Barra adaptable al minimizar*/
-    nav .navegador{
-        float:none;
-        width:auto;
-        justify-content:center;
-    }
-    nav .lista {
-        float: none;
-        position: fixed;
-        z-index: 9;
-        left: 0;
-        right: 0;
-        top: 100px;
-        bottom: 100%;
-        width: auto;
-        height: auto;
-        flex-direction: column;
-        justify-content: space-evenly;
-        background-color: darkcyan;
-        overflow:hidden;
-        transition: all .5s ease-in-out;
-    }
-    nav .lista a{
-        font-size:20px;
-    }
-    nav :checked ~ .lista{
-        bottom:0;
-    }
-    nav .iconobarra{
-        display:block;
-    }
 }
 

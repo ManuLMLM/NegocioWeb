@@ -1,47 +1,63 @@
-﻿using Microsoft.AspNetCore.Identity;
+﻿
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.CodeAnalysis.Scripting;
-using Microsoft.EntityFrameworkCore;
-using Microsoft.EntityFrameworkCore.Metadata.Internal;
-using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
-using NegocioWeb.BaseDeDatos;
-using Newtonsoft.Json.Converters;
-using System.Security.Policy;
-using System.Text.Encodings.Web;
+using Moldes.Usuarios;
+using System.Text.Json;
+using BaseDeDatos.Datos;
+using Newtonsoft.Json;
 
 namespace NegocioWeb.Controllers
 {
     public class InicioDeSesionController : Controller
     {
-        private readonly NegocioContext _context;
-        public InicioDeSesionController(NegocioContext context)
+        private readonly NegocioWebContext _context;
+        public async Task<string> SolicitarGet(string url)
         {
-            _context= context;
+            HttpClient pedido = new HttpClient();
+            var respuesta = await pedido.GetAsync(url);
+            var contenido = await respuesta.Content.ReadAsStringAsync();
+            return contenido;
+        }
+        public InicioDeSesionController(NegocioWebContext context)
+        {
+            _context = context;
         }
         public IActionResult Login()
         {
             return View();
         }
         [HttpPost]
-        public IActionResult Login(string Username, string Contra)
-        {
-                    var User = (from d in _context.Usuarios where d.Correo == Username 
-                                  && d.Contraseña == Contra select d).FirstOrDefault();
+    public async Task<IActionResult> Login(string Username, string Contra)
+    {
+            var url = "https://localhost:7002/api/Api1/Usuarios";
+            string respuesta = await SolicitarGet(url);
 
-                    if (User == null) {
-                return Login();
+            var lista = JsonConvert.DeserializeObject<List<LoginValidacion>>(respuesta);
+            var User = (from d in _context.Usuarios
+                        where d.Correo == Username
+                          && d.Contraseña == Contra
+                        select d.IdRol).FirstOrDefault();
+            var Validar = (from d in _context.Usuarios
+                        where d.Correo == Username
+                          && d.Contraseña == Contra
+                        select new LoginValidacion
+                        {
+                            Usuario=d.Correo,
+                            Contra=d.Contraseña
+                        }).ToList();
+            if (Validar[0].Usuario == Username && Validar[0].Contra == Contra) {
+                if (User ==1)
+                {
+                    return RedirectToAction("IndexAdmin", "VentanaInicio");
+                }
+                else if (User == 3)
+                {
+                    return RedirectToAction("IndexAdmin", "VentanaInicio");
+                }
+                else { return View(); }
 
             }
-            else if (User.IdRol==3)
-            {
-                return RedirectToAction("Privacy", "Home");
-            }
-            else if (User.IdRol==1)
-            {
-                return RedirectToAction("IndexAdmin", "VentanaInicio");
-            }
-                    else { return Login(); }
+            else { return View(); }
+
         }
-        
-    }
+}
 }

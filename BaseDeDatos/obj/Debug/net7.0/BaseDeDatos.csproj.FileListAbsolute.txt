@@ -1,0 +1,14 @@
+C:\Users\luis_\OneDrive\Documentos\C#\NegocioWeb\BaseDeDatos\bin\Debug\net7.0\BaseDeDatos.deps.json
+C:\Users\luis_\OneDrive\Documentos\C#\NegocioWeb\BaseDeDatos\bin\Debug\net7.0\BaseDeDatos.runtimeconfig.json
+C:\Users\luis_\OneDrive\Documentos\C#\NegocioWeb\BaseDeDatos\bin\Debug\net7.0\BaseDeDatos.dll
+C:\Users\luis_\OneDrive\Documentos\C#\NegocioWeb\BaseDeDatos\bin\Debug\net7.0\BaseDeDatos.pdb
+C:\Users\luis_\OneDrive\Documentos\C#\NegocioWeb\BaseDeDatos\obj\Debug\net7.0\BaseDeDatos.csproj.AssemblyReference.cache
+C:\Users\luis_\OneDrive\Documentos\C#\NegocioWeb\BaseDeDatos\obj\Debug\net7.0\BaseDeDatos.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\luis_\OneDrive\Documentos\C#\NegocioWeb\BaseDeDatos\obj\Debug\net7.0\BaseDeDatos.AssemblyInfoInputs.cache
+C:\Users\luis_\OneDrive\Documentos\C#\NegocioWeb\BaseDeDatos\obj\Debug\net7.0\BaseDeDatos.AssemblyInfo.cs
+C:\Users\luis_\OneDrive\Documentos\C#\NegocioWeb\BaseDeDatos\obj\Debug\net7.0\BaseDeDatos.csproj.CoreCompileInputs.cache
+C:\Users\luis_\OneDrive\Documentos\C#\NegocioWeb\BaseDeDatos\obj\Debug\net7.0\BaseDeDatos.dll
+C:\Users\luis_\OneDrive\Documentos\C#\NegocioWeb\BaseDeDatos\obj\Debug\net7.0\refint\BaseDeDatos.dll
+C:\Users\luis_\OneDrive\Documentos\C#\NegocioWeb\BaseDeDatos\obj\Debug\net7.0\BaseDeDatos.pdb
+C:\Users\luis_\OneDrive\Documentos\C#\NegocioWeb\BaseDeDatos\obj\Debug\net7.0\BaseDeDatos.genruntimeconfig.cache
+C:\Users\luis_\OneDrive\Documentos\C#\NegocioWeb\BaseDeDatos\obj\Debug\net7.0\ref\BaseDeDatos.dll

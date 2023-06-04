@@ -1,8 +1,7 @@
-﻿
+﻿var url = "https://localhost:7084/InicioDeSesion/Login";
 function loginjava() {
 
-    
-    let user, pass
+    var user, pass
     user = document.getElementById("Usuario").value;
     pass = document.getElementById("Contrasena").value;
 
@@ -12,6 +11,17 @@ function loginjava() {
         alert("Por favor introduzca la contraseña")
     } else if (user == "" && pass != "") {
         alert("Por favor introduzca el usuario")
+    } else {
+        var accion = document.getElementById("datosusuario");
+        accion.id = '@Url.Content("~/InicioDeSesion/Login")';
+        accion.method = "post";
+        var objeto = `{"Lista":[{"Usuario":"` + user + `","Contra":"` + pass + `"}]}`;
+        //fetch(url, {
+        //    method: "POST",
+        //    headers: {
+        //        "Content-Type": "application/json",
+        //    },
+        //    body: JSON.stringify(objeto),
+        //});
     }
-    
 }

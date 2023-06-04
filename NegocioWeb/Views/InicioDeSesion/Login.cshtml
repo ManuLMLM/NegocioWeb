@@ -15,7 +15,7 @@
     </head>
     <body class="fondo">
         <div class="contenidologin">
-            <form action="@Url.Content("~/InicioDeSesion/Login")" method="post">
+        <form id="datosusuario">
             <div class="contenido">
                 <input id="Usuario" type="text" class="form-control" name="Username" placeholder="Usuario"/>
                 <br />
@@ -24,7 +24,7 @@
                 <button id="Boton" class="botonmaster" onclick="loginjava()">Iniciar Sesión</button>
              
             </div>
-            </form>
+        </form>
         </div>
     @section scripts{
         <script src="~/js/VentanaMensaje.js">

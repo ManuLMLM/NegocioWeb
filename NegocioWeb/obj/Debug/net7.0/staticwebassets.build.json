@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "sp7/jD6r32AdPsJZgIRExr/X0s9TirldFeyAOilOwFA=",
+  "Hash": "pNBtzxJKZLVXCDqgvCetcJkDcmkhOtOQLj2RlYh/PXc=",
   "Source": "NegocioWeb",
   "BasePath": "_content/NegocioWeb",
   "Mode": "Default",
@@ -49,6 +49,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\luis_\\OneDrive\\Documentos\\C#\\NegocioWeb\\NegocioWeb\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\NegocioWeb.bundle.scp.css"
+    },
+    {
+      "Identity": "C:\\Users\\luis_\\OneDrive\\Documentos\\C#\\NegocioWeb\\NegocioWeb\\wwwroot\\css\\EstilosLayoutVentanaAdmin.css",
+      "SourceId": "NegocioWeb",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\luis_\\OneDrive\\Documentos\\C#\\NegocioWeb\\NegocioWeb\\wwwroot\\",
+      "BasePath": "_content/NegocioWeb",
+      "RelativePath": "css/EstilosLayoutVentanaAdmin.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\EstilosLayoutVentanaAdmin.css"
     },
     {
       "Identity": "C:\\Users\\luis_\\OneDrive\\Documentos\\C#\\NegocioWeb\\NegocioWeb\\wwwroot\\css\\EstilosLogin.css",
@@ -151,6 +168,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\imagenes\\FondoTienda.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\luis_\\OneDrive\\Documentos\\C#\\NegocioWeb\\NegocioWeb\\wwwroot\\js\\Admin.js",
+      "SourceId": "NegocioWeb",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\luis_\\OneDrive\\Documentos\\C#\\NegocioWeb\\NegocioWeb\\wwwroot\\",
+      "BasePath": "_content/NegocioWeb",
+      "RelativePath": "js/Admin.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\Admin.js"
     },
     {
       "Identity": "C:\\Users\\luis_\\OneDrive\\Documentos\\C#\\NegocioWeb\\NegocioWeb\\wwwroot\\js\\site.js",

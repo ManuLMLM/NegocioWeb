@@ -3661,6 +3661,29 @@
         "runtime": {
           "lib/netstandard1.3/System.Xml.XDocument.dll": {}
         }
+      },
+      "BaseDeDatos/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore.SqlServer": "7.0.2"
+        },
+        "compile": {
+          "bin/placeholder/BaseDeDatos.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/BaseDeDatos.dll": {}
+        }
+      },
+      "Moldes/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "compile": {
+          "bin/placeholder/Moldes.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Moldes.dll": {}
+        }
       }
     }
   },
@@ -10599,13 +10622,25 @@
         "system.xml.xdocument.4.3.0.nupkg.sha512",
         "system.xml.xdocument.nuspec"
       ]
+    },
+    "BaseDeDatos/1.0.0": {
+      "type": "project",
+      "path": "../BaseDeDatos/BaseDeDatos.csproj",
+      "msbuildProject": "../BaseDeDatos/BaseDeDatos.csproj"
+    },
+    "Moldes/1.0.0": {
+      "type": "project",
+      "path": "../Moldes/Moldes.csproj",
+      "msbuildProject": "../Moldes/Moldes.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net7.0": [
+      "BaseDeDatos >= 1.0.0",
       "Microsoft.EntityFrameworkCore.SqlServer >= 7.0.2",
       "Microsoft.EntityFrameworkCore.Tools >= 7.0.2",
-      "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 7.0.6"
+      "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 7.0.6",
+      "Moldes >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -10640,7 +10675,14 @@
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\luis_\\OneDrive\\Documentos\\C#\\NegocioWeb\\BaseDeDatos\\BaseDeDatos.csproj": {
+              "projectPath": "C:\\Users\\luis_\\OneDrive\\Documentos\\C#\\NegocioWeb\\BaseDeDatos\\BaseDeDatos.csproj"
+            },
+            "C:\\Users\\luis_\\OneDrive\\Documentos\\C#\\NegocioWeb\\Moldes\\Moldes.csproj": {
+              "projectPath": "C:\\Users\\luis_\\OneDrive\\Documentos\\C#\\NegocioWeb\\Moldes\\Moldes.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
