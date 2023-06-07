@@ -9,6 +9,7 @@
       "NegocioWeb/1.0.0": {
         "dependencies": {
           "BaseDeDatos": "1.0.0",
+          "MetodosOperaciones": "1.0.0",
           "Microsoft.EntityFrameworkCore.SqlServer": "7.0.2",
           "Microsoft.EntityFrameworkCore.Tools": "7.0.2",
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": "7.0.6",
@@ -2282,6 +2283,16 @@
           "BaseDeDatos.dll": {}
         }
       },
+      "MetodosOperaciones/1.0.0": {
+        "dependencies": {
+          "BaseDeDatos": "1.0.0",
+          "Microsoft.EntityFrameworkCore.SqlServer": "7.0.2",
+          "Moldes": "1.0.0"
+        },
+        "runtime": {
+          "MetodosOperaciones.dll": {}
+        }
+      },
       "Moldes/1.0.0": {
         "runtime": {
           "Moldes.dll": {}
@@ -3556,6 +3567,11 @@
       "hashPath": "system.xml.xdocument.4.3.0.nupkg.sha512"
     },
     "BaseDeDatos/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "MetodosOperaciones/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

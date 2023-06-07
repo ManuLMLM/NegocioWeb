@@ -12,9 +12,10 @@ function loginjava() {
     } else if (user == "" && pass != "") {
         alert("Por favor introduzca el usuario")
     } else {
-        var accion = document.getElementById("datosusuario");
-        accion.id = '@Url.Content("~/InicioDeSesion/Login")';
-        accion.method = "post";
+        //var accion = document.getElementById("datosusuario");
+        //accion.id = '@Url.Content("~/VentanaInicio/IndexAdmin")';
+        //accion.method = "post";
+        
         var objeto = `{"Lista":[{"Usuario":"` + user + `","Contra":"` + pass + `"}]}`;
         //fetch(url, {
         //    method: "POST",

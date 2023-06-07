@@ -3,7 +3,7 @@
     ViewData["Title"] = "Iniciar Sesión";
     Layout = "_LayoutLogin";
 }
-
+@model Moldes.Usuarios.Usuario
 
 <html lang="es-mx">
     <head>
@@ -15,11 +15,11 @@
     </head>
     <body class="fondo">
         <div class="contenidologin">
-        <form id="datosusuario">
+        <form id="datosusuario" asp-controller="InicioDeSesion" asp-action="Login" method="post">
             <div class="contenido">
-                <input id="Usuario" type="text" class="form-control" name="Username" placeholder="Usuario"/>
+                <input id="Usuario" type="email" class="form-control" placeholder="Usuario" asp-for="Correo"/>
                 <br />
-                <input id="Contrasena" type="password" class="form-control" name="Contra" placeholder="Contraseña"/>
+                <input id="Contrasena" type="password" class="form-control" placeholder="Contraseña" asp-for="Contraseña"/>
                 <br />
                 <button id="Boton" class="botonmaster" onclick="loginjava()">Iniciar Sesión</button>
              

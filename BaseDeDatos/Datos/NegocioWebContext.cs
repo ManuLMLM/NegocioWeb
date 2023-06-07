@@ -1,15 +1,16 @@
-﻿using Microsoft.EntityFrameworkCore;
-using Microsoft.EntityFrameworkCore.Infrastructure;
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
+using Microsoft.EntityFrameworkCore;
 
 namespace BaseDeDatos.Datos;
 
 public partial class NegocioWebContext : DbContext
 {
-    Class1 validar = new Class1();
     public NegocioWebContext()
     {
     }
-
+    Class1 validar = new Class1();
     public NegocioWebContext(DbContextOptions<NegocioWebContext> options)
         : base(options)
     {
@@ -26,17 +27,15 @@ public partial class NegocioWebContext : DbContext
     public virtual DbSet<Usuario> Usuarios { get; set; }
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-        => optionsBuilder.UseSqlServer(("Data Source=LAPTOP-OIQBSE4M\\SQLEXPRESS; Initial Catalog="+validar.Base+"; User="+validar.Nombre+"; Password="+validar.Contra+";TrustServerCertificate=True"));
-
+    => optionsBuilder.UseSqlServer("Data Source=LAPTOP-OIQBSE4M\\SQLEXPRESS; Initial Catalog=" + validar.Base + "; User=" + validar.Nombre + "; Password=" + validar.Contra + ";TrustServerCertificate=True");
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         modelBuilder.Entity<Modulo>(entity =>
         {
             entity.ToTable("Modulo");
-
             entity.Property(e => e.Nombre)
-                .HasMaxLength(50)
-                .IsUnicode(false);
+            .HasMaxLength(50)
+            .IsUnicode(false);
         });
 
         modelBuilder.Entity<Operacione>(entity =>

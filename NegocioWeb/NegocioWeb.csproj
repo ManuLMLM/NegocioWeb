@@ -17,6 +17,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\BaseDeDatos\BaseDeDatos.csproj" />
+    <ProjectReference Include="..\MetodosOperaciones\MetodosOperaciones.csproj" />
     <ProjectReference Include="..\Moldes\Moldes.csproj" />
   </ItemGroup>
 

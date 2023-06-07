@@ -277,3 +277,5 @@ C:\Users\luis_\OneDrive\Documentos\C#\NegocioWeb\NegocioWeb\bin\Debug\net7.0\Bas
 C:\Users\luis_\OneDrive\Documentos\C#\NegocioWeb\NegocioWeb\bin\Debug\net7.0\Moldes.dll
 C:\Users\luis_\OneDrive\Documentos\C#\NegocioWeb\NegocioWeb\bin\Debug\net7.0\BaseDeDatos.pdb
 C:\Users\luis_\OneDrive\Documentos\C#\NegocioWeb\NegocioWeb\bin\Debug\net7.0\Moldes.pdb
+C:\Users\luis_\OneDrive\Documentos\C#\NegocioWeb\NegocioWeb\bin\Debug\net7.0\MetodosOperaciones.dll
+C:\Users\luis_\OneDrive\Documentos\C#\NegocioWeb\NegocioWeb\bin\Debug\net7.0\MetodosOperaciones.pdb

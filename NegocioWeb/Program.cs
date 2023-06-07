@@ -1,6 +1,6 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Session;
-
+using Microsoft.AspNetCore.Authentication.Cookies;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -11,6 +11,12 @@ builder.Services.AddDbContext<BaseDeDatos.Datos.NegocioWebContext>(opciones =>
 {
     opciones.UseSqlServer(builder.Configuration.GetConnectionString("NegocioContext"));
 });
+builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme).AddCookie(d =>
+{
+    d.LoginPath = "/InicioDeSesion/Login";
+    d.AccessDeniedPath = "/InicioDeSesion/Login";
+}    
+); ;
 
 var app = builder.Build();
 
@@ -26,6 +32,8 @@ app.UseHttpsRedirection();
 app.UseStaticFiles();
 
 app.UseRouting();
+
+app.UseAuthentication();
 
 app.UseAuthorization();
 

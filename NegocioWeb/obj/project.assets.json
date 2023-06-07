@@ -3675,6 +3675,21 @@
           "bin/placeholder/BaseDeDatos.dll": {}
         }
       },
+      "MetodosOperaciones/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "BaseDeDatos": "1.0.0",
+          "Microsoft.EntityFrameworkCore.SqlServer": "7.0.2",
+          "Moldes": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/MetodosOperaciones.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MetodosOperaciones.dll": {}
+        }
+      },
       "Moldes/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
@@ -10628,6 +10643,11 @@
       "path": "../BaseDeDatos/BaseDeDatos.csproj",
       "msbuildProject": "../BaseDeDatos/BaseDeDatos.csproj"
     },
+    "MetodosOperaciones/1.0.0": {
+      "type": "project",
+      "path": "../MetodosOperaciones/MetodosOperaciones.csproj",
+      "msbuildProject": "../MetodosOperaciones/MetodosOperaciones.csproj"
+    },
     "Moldes/1.0.0": {
       "type": "project",
       "path": "../Moldes/Moldes.csproj",
@@ -10637,6 +10657,7 @@
   "projectFileDependencyGroups": {
     "net7.0": [
       "BaseDeDatos >= 1.0.0",
+      "MetodosOperaciones >= 1.0.0",
       "Microsoft.EntityFrameworkCore.SqlServer >= 7.0.2",
       "Microsoft.EntityFrameworkCore.Tools >= 7.0.2",
       "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 7.0.6",
@@ -10678,6 +10699,9 @@
           "projectReferences": {
             "C:\\Users\\luis_\\OneDrive\\Documentos\\C#\\NegocioWeb\\BaseDeDatos\\BaseDeDatos.csproj": {
               "projectPath": "C:\\Users\\luis_\\OneDrive\\Documentos\\C#\\NegocioWeb\\BaseDeDatos\\BaseDeDatos.csproj"
+            },
+            "C:\\Users\\luis_\\OneDrive\\Documentos\\C#\\NegocioWeb\\MetodosOperaciones\\MetodosOperaciones.csproj": {
+              "projectPath": "C:\\Users\\luis_\\OneDrive\\Documentos\\C#\\NegocioWeb\\MetodosOperaciones\\MetodosOperaciones.csproj"
             },
             "C:\\Users\\luis_\\OneDrive\\Documentos\\C#\\NegocioWeb\\Moldes\\Moldes.csproj": {
               "projectPath": "C:\\Users\\luis_\\OneDrive\\Documentos\\C#\\NegocioWeb\\Moldes\\Moldes.csproj"
