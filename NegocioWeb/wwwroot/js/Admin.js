@@ -1,4 +1,4 @@
-﻿var url = "https://localhost:7084/api/ApiDatos/Usuarios-1";
+﻿var url = "https://localhost:7002/api/Api1/Usuarios-1";
 let tabla1 = document.getElementById("tabla1"); 
 fetch(url).then(function (resultado) {
     if (resultado.ok) {

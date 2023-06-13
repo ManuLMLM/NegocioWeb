@@ -26,3 +26,20 @@ function loginjava() {
         //});
     }
 }
+function crearcuenta() {
+    var nombre, correo, contra, contra2;
+    nombre = document.getElementById("Nombre").value;
+    correo = document.getElementById("Correo").value;
+    contra = document.getElementById("Contra").value;
+    contra2 = document.getElementById("Contra2").value; alert(nombre + correo + contra + contra2)
+    if (nombre == "" || correo == "" || contra == "" || contra2 == "") {
+        alert("Por favor, rellene los campos para la reación de su Cuenta");
+    } else if (contra != contra2) {
+        contra.fontcolor("red");
+        alert("La contraseña no coincide")
+    } else {
+        var formulario = document.getElementById("formulario");
+        formulario.id = '@Url.Content("~/Cuentas/Crear")';
+        formulario.method = "post";
+    }
+}

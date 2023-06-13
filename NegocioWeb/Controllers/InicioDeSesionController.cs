@@ -20,42 +20,45 @@ namespace NegocioWeb.Controllers
         {
             _context = context;
         }
-        public IActionResult Login()
+        public async Task<IActionResult> Login()
         {
+            await HttpContext.SignOutAsync(CookieAuthenticationDefaults.AuthenticationScheme);
             return View();
         }
 
         [HttpPost]
         public async Task<IActionResult> Login(Moldes.Usuarios.Usuario usuario)
         {
-            Usuarios metodo = new Usuarios();
-            var user = metodo.ValidarUsuario(usuario.Correo, usuario.Contraseña);
-            if (user != null)
-            {
-                var token = new List<Claim>
+            
+                Usuarios metodo = new Usuarios();
+                var user = metodo.ValidarUsuario(usuario.Correo, usuario.Contraseña);
+                if (user != null)
+                {
+                    var token = new List<Claim>
                 {
                     new Claim(ClaimTypes.Name, user.Nombre),
                     new Claim("Correo", user.Correo)
                 };
-                
+
                     token.Add(new Claim(ClaimTypes.Role, user.Rol));
-                
-                var tokenidentidad = new ClaimsIdentity(token, CookieAuthenticationDefaults.AuthenticationScheme);
 
-                await HttpContext.SignInAsync(CookieAuthenticationDefaults.AuthenticationScheme, new ClaimsPrincipal(tokenidentidad));
+                    var tokenidentidad = new ClaimsIdentity(token, CookieAuthenticationDefaults.AuthenticationScheme);
 
-                return RedirectToAction("IndexAdmin", "VentanaInicio");
-            }
-            else
-            {
-                return View();
-            }
+                    await HttpContext.SignInAsync(CookieAuthenticationDefaults.AuthenticationScheme, new ClaimsPrincipal(tokenidentidad));
 
+                    return RedirectToAction("IndexAdmin", "VentanaInicio");
+                }
+                else
+                {
+                    return View();
+                }
+            
         }
+        
         public async Task<IActionResult> Salir()
         {
             await HttpContext.SignOutAsync(CookieAuthenticationDefaults.AuthenticationScheme);
-            return RedirectToAction("Login");
+            return RedirectToAction("Login", "InicioDeSesion");
         }
         //    [HttpPost]
         //public async Task<IActionResult> Login(string Username, string Contra)

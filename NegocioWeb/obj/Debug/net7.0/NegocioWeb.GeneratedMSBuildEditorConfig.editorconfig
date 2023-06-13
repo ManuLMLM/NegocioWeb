@@ -16,6 +16,10 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\luis_\OneDrive\Documentos\C#\NegocioWeb\NegocioWeb
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/luis_/OneDrive/Documentos/C\#/NegocioWeb/NegocioWeb/Views/Cuentas/Crear.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VlbnRhc1xDcmVhci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/luis_/OneDrive/Documentos/C\#/NegocioWeb/NegocioWeb/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 

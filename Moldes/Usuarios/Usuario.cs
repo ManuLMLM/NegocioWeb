@@ -10,15 +10,14 @@ namespace Moldes.Usuarios
     {
         public int Id { get; set; }
 
-        public string Nombre { get; set; } = null!;
+        public string Nombre { get; set; }
 
-        public string Correo { get; set; } = null!;
+        public string Correo { get; set; }
 
-        public string Contraseña { get; set; } = null!;
+        public string Contraseña { get; set; }
 
         public DateTime Fecha { get; set; }
 
-        public string Rol { get; set; } = null!;
-        public IList<Usuario> Lista { get; set; }
+        public string Rol { get; set; }
     }
 }

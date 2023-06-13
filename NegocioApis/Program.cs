@@ -9,6 +9,15 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
+builder.Services.AddCors(d =>
+{
+    d.AddPolicy("FiltroDominioNegocioWeb", app =>
+    {
+        app.AllowAnyOrigin().AllowAnyHeader().AllowAnyMethod();
+        
+    });
+});
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -19,6 +28,8 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
+
+app.UseCors("FiltroDominioNegocioWeb");
 
 app.UseAuthorization();
 

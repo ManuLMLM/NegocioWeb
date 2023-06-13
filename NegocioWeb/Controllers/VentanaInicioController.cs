@@ -14,10 +14,10 @@ namespace NegocioWeb.Controllers
             _base = context;
         }
         [Authorize(Roles ="Administrador")]
-        public async Task<IActionResult> IndexAdmin()
+        public IActionResult IndexAdmin()
         {
-            var consulta = _base.Usuarios.Include(d => d.IdRolNavigation);
-            return View(await consulta.ToListAsync());
+            
+            return View();
         }
     }
 }

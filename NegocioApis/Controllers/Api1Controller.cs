@@ -24,23 +24,21 @@ namespace NegocioApis.Controllers
         }
         [HttpGet]
         [Route("Usuarios-1")]
-        public async Task<List<BaseDeDatos.Datos.Usuario>> get()
+        public async Task<List<Moldes.Usuarios.Usuario>> get()
         {
-            //var _context = new NegocioContext();
-            //var ListUser = (from d in _context.Usuarios
-            //                select new NegocioWeb.Moldes.Usuario
-            //                {
-            //                    Id = d.Id,
-            //                    Nombre = d.Nombre,
-            //                    Correo = d.Correo,
-            //                    Contraseña = d.Contraseña,
-            //                    Fecha = d.Fecha,
-            //                    Rol = d.IdRolNavigation.Nombre
-            //                }).ToListAsync();
-            var datos = new NegocioWebContext();
-            var ListUser = await (from d in datos.Usuarios select d).ToListAsync();
+
+            Task<List<Moldes.Usuarios.Usuario>> ListUser = (from d in _context.Usuarios
+                            select new Moldes.Usuarios.Usuario
+                            {
+                                Id = d.Id,
+                                Nombre = d.Nombre,
+                                Correo = d.Correo,
+                                Contraseña = d.Contraseña,
+                                Fecha = d.Fecha,
+                                Rol = d.IdRolNavigation.Nombre
+                            }).ToListAsync();
             
-            return ListUser;
+            return await ListUser;
 
         }
     }
