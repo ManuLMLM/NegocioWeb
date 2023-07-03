@@ -41,5 +41,12 @@ namespace NegocioApis.Controllers
             return await ListUser;
 
         }
+        [HttpGet]
+        [Route("CorreosExistentes")]
+        public async Task<List<string>> ListaCorreos()
+        {
+            var correos = (from d in _context.Usuarios select d.Correo).ToListAsync();
+            return await correos;
+        }
     }
 }
